@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif; /* Ensure the font family name matches the import */
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.marketing-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    margin: 2rem;
+    color: white;
+    background-color: hsl(233, 47%, 7%);
+    align-items: stretch;
+
+    
+}
+
+.image {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+/*     display: flex; */
+/*     min-height: 100vh; */
+    background: hsl(277, 64%, 61%);
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block; 
+/*     object-fit: cover; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.60;
+    background: hsl(277, 64%, 61%);
+    position: absolute;
+}
+
+
+.get-insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    place-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.get-insights-purple {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0;
+    grid-column: 1 / span 3;
+    font-family: 'Lexend Deca';
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.discover {
+    color: hsla(0, 0%, 100%, 0.6);
+    grid-column: 1/span 3;
+/*     padding-bottom: 30px; */
+/*     align-content: center; */
+    
+}
+
+.tenk {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 0 20px 0 0;
+    align-self: end;
+}
+
+.tenk p:first-child {
+    font-size: 20px; 
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.tenk p:nth-child(2){
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+}
+
+.templates {
+    grid-column: 2/3; 
+    grid-row: 3/4;
+    padding: 0 20px 0 0;
+    align-self: end;
+}
+
+.templates p:first-child {
+    font-size: 20px; 
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.templates p:nth-child(2){
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+}
+
+.queries {
+    grid-column: 3/4; 
+    grid-row: 3/4;
+    padding: 0 20px 0 0;
+    align-self: end;
+}
+
+.queries p:first-child {
+    font-size: 20px; 
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.queries p:nth-child(2){
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 13px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .marketing-section {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+
+    .image {
+        order: -1;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+}
+
+
+
+
+
